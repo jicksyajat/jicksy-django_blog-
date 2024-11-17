@@ -1,0 +1,19 @@
+{% block title %}
+Blog
+{% endblock %}
+
+{% block content %}
+<form action=""method="post">
+    {% csrf_token %}
+    
+    <table>
+        {{ form.p }}
+        <p>Are you sure to delete the task</p>
+       
+                <div>
+                    <button type="submit">Save</button>
+                </div>
+            
+    </table>
+</form>
+{% endblock %}

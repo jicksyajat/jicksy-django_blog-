@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+{%block content%}
+
+
+{% load static %}
+<h1>home page</h1>
+ <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static '../static/images/blog11.jpg' %}" class="d-block w-100 h-50" alt="...">
+    </div>
+    <div class="carousel-item active">
+        <img src="{% static '../static/images/blog22.jpg' %}" class="d-block w-100 h-50" alt="...">
+      </div>
+    <!-- <div class="carousel-item">
+      <img src="{% static '../static/images/hosp2.jpg'%}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static '../static/images/hosp3.jpg'%}" class="d-block w-100" alt="...">
+    </div>  -->
+</div>
+{%endblock%}

@@ -1,0 +1,10 @@
+li:hover{
+    background-color: green;
+    border-radius: 10px;
+
+}
+/* departments */
+.heading{
+    text-align: center;
+    color: green;
+}

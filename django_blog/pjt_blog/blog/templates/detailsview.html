@@ -1,0 +1,22 @@
+{% extends 'base.html'%}
+{% block title %} {{post.title}}{% endblock%}
+{% block content %}
+
+<!-- style="text-align: center; margin-left: 200px; width: 70%; height: 70%; background-color: rgb(55, 0, 128);" -->
+
+ 
+<div style="text-align: center; margin-left: 200px; width: 70%; height: 70%; background-color: rgb(55, 0, 128);" >
+    <h1 style="color: aliceblue;"> {{ post.title }}</h1>
+    <p style="color: aliceblue;">{{ post.content }}</p>
+    <p style="color: aliceblue;">{{ post.pdate }}</p>
+    <p style="color: aliceblue;">Published on {{ post.pdate }} by{{ post.author }} </b></p>
+
+
+    <a href="{% url 'view_update' post.pk %}">Edit</a>
+    <a href="{% url 'view_Delete' post.pk %}">Delete</a>
+    <a href="{% url 'usercreation' %}">Create</a>
+    <a href="{% url 'listblog'  %}">back to blog</a>
+
+</div>
+{% endblock %}
+
